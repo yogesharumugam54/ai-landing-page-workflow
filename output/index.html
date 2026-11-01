@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northwind Coffee | Fresh small-batch coffee, monthly</title>
+<meta name="description" content="Northwind Coffee delivers freshly roasted small-batch coffee to your door every month. Start your first box today.">
+<style>
+:root{--primary:#3b2a20;--accent:#d9822b;--bg:#fbf7f2;--ink:#2a1f18}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:0 0 16px;color:var(--primary)}
+h2{font-size:clamp(1.5rem,4vw,2rem);margin:0 0 24px;color:var(--primary)}
+.lead{font-size:1.15rem;max-width:620px}
+.btn{display:inline-block;background:var(--accent);color:#1f1409;font-weight:700;padding:14px 26px;border-radius:8px;text-decoration:none}
+.btn:hover{filter:brightness(.95)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
+#hero{padding-top:72px}
+.cards{display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card h3{margin:0 0 8px;color:var(--primary)}
+ol.steps{padding-left:0;list-style:none;counter-reset:s;display:grid;gap:14px}
+ol.steps li{counter-increment:s;background:#fff;border-radius:12px;padding:18px 18px 18px 64px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:18px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;font-weight:700}
+details{background:#fff;border-radius:12px;padding:16px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;color:var(--primary)}
+#cta{background:var(--primary);color:#fff;text-align:center}
+#cta h2{color:#fff}
+footer{padding:24px 0;text-align:center;font-size:.85rem;color:#6b5a4d}
+@media(min-width:720px){.cards{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<main>
+<section id="hero"><div class="wrap">
+<h1>Fresh coffee at your door every month</h1>
+<p class="lead">Northwind Coffee roasts small batches and ships them within days, so every cup tastes like it should.</p>
+<p><a class="btn" href="https://example.com/subscribe">Start my first box</a></p>
+</div></section>
+
+<section id="benefits"><div class="wrap">
+<h2>Why people switch to Northwind</h2>
+<div class="cards">
+<div class="card"><h3>Roasted in small batches</h3><p>We roast in small amounts so your beans are not sitting in a warehouse.</p></div>
+<div class="card"><h3>Delivered on a schedule</h3><p>Your box arrives monthly, so you never run out or forget to reorder.</p></div>
+<div class="card"><h3>Change or pause anytime</h3><p>Skip a month, switch roasts, or cancel whenever you like.</p></div>
+</div></div></section>
+
+<section id="how-it-works"><div class="wrap">
+<h2>How it works</h2>
+<ol class="steps">
+<li><strong>Pick your roast.</strong> Choose light, medium or dark, whole bean or ground.</li>
+<li><strong>We roast and ship.</strong> Your coffee is roasted shortly before it leaves us.</li>
+<li><strong>Enjoy and adjust.</strong> Tell us what you liked and change your next box.</li>
+</ol>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Common questions</h2>
+<details><summary>Can I cancel at any time?</summary><p>Yes. You can pause or cancel from your account before your next box ships.</p></details>
+<details><summary>Do you offer ground coffee?</summary><p>Yes. Choose whole bean or ground when you pick your roast.</p></details>
+<details><summary>How often do boxes ship?</summary><p>Once a month. You can skip any month you do not need coffee.</p></details>
+</div></section>
+
+<section id="cta"><div class="wrap">
+<h2>Ready for better coffee?</h2>
+<p>Start with one box and change anything later.</p>
+<p><a class="btn" href="https://example.com/subscribe">Start my first box</a></p>
+</div></section>
+</main>
+<footer><div class="wrap">Sample page for a fictional brand. Generated from brief/example-brief.md.</div></footer>
+</body>
+</html>
